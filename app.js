@@ -14,17 +14,22 @@ button.addEventListener('click', addToList);
 
 list.addEventListener('click', (e) => {
     if (e.target.innerText == "REMOVE") {
-        e.target.parentElement.remove();
+        // console.log(e.target.parentElement.firstElementChild.classList.contains('symbol'));
+        if (e.target.previousElementSibling.previousElementSibling.classList.contains("symbol")) {
+            e.target.parentElement.remove();
+        }else{
+            alert("Please click symbol before to remove")
+        }
     }
-    else if(e.target.innerText == "⚪") {
+    else if (e.target.innerText == "⚪") {
         e.target.innerText = "✔";
         e.target.nextElementSibling.style.textDecoration = "line-through";
-        e.target.classList.add('symbol');  
+        e.target.classList.add('symbol');
     }
-    else if(e.target.innerText == "✔" ){
+    else if (e.target.innerText == "✔") {
         e.target.nextElementSibling.style.textDecoration = "none";
         e.target.innerText = "⚪";
-        e.target.classList.remove('symbol'); 
+        e.target.classList.remove('symbol');
     }
 });
 
@@ -33,8 +38,6 @@ input.addEventListener("keydown", function (event) {
         addToList();
     }
 })
-
-
 
 function addToList() {
     if (input.value != "") {
@@ -47,9 +50,5 @@ function addToList() {
     else (
         alert("Please type a to do...")
     )
-}
-
-
-
-// &#10004;
+};
 
