@@ -176,3 +176,13 @@ h1 {
     color: green;
     font-size: 1.5rem;
 }
+
+@media (max-width:768px) {
+    main {
+        width: 500px;
+    }
+    #inputText {
+        width: 280px;
+    }
+    
+}
