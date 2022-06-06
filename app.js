@@ -18,7 +18,7 @@ list.addEventListener('click', (e) => {
         if (e.target.previousElementSibling.previousElementSibling.classList.contains("symbol")) {
             e.target.parentElement.remove();
         }else{
-            alert("Please click symbol before to remove")
+            alert("Please click ⚪ (symbol)  before to remove")
         }
     }
     else if (e.target.innerText == "⚪") {
