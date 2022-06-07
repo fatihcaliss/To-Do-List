@@ -2,19 +2,11 @@ const input = document.getElementById('inputText');
 const button = document.querySelector('#btn');
 const list = document.querySelector('.list');
 
-// const removeBtn = `<button class="removeButton"> REMOVE </button>`
-
 button.addEventListener('click', addToList);
-
-// list.addEventListener('click', (e) => {
-//     if (e.target.parentElement != list && e.target.parentElement != list.parentElement) {
-//         e.target.parentElement.remove();
-//     }
-// });
 
 list.addEventListener('click', (e) => {
     if (e.target.innerText == "REMOVE") {
-        // console.log(e.target.parentElement.firstElementChild.classList.contains('symbol'));
+        
         if (e.target.previousElementSibling.previousElementSibling.classList.contains("symbol")) {
             e.target.parentElement.remove();
         }else{
@@ -41,9 +33,16 @@ input.addEventListener("keydown", function (event) {
 
 function addToList() {
     if (input.value != "") {
+        let date = new Date(); //this five line part for adding date
+        let options = {    weekday: "short",
+        year: "numeric",
+        month: "2-digit",
+        day: "numeric"};
+        let shortDate =  date.toLocaleDateString("en", options)
         let element = document.createElement('div');
         element.classList.add('contentText');
-        element.innerHTML = `<span>&#x26AA;</span><p>${input.value}</p><button class="button-55"> REMOVE </button>`
+        element.innerHTML = `<span class="whiteBall">&#x26AA;</span><p>${input.value}</p>
+        <div class="rght"><p class="date">${shortDate}</p> <button class="button-55"> REMOVE </button></div>`
         list.appendChild(element);
         input.value = ""
     }
@@ -51,4 +50,3 @@ function addToList() {
         alert("Please type a to do...")
     )
 };
-
