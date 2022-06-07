@@ -33,27 +33,14 @@ main {
 }
 
 p {
-    /* width: 10rem;  */
+    max-width: 340px; 
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left: .5rem;
-    padding-right: 2rem;
     font-size: 1.5rem;
     font-family: 'Patrick Hand', cursive;
     font-weight: lighter;
 }
-
-/* button {
-    margin: 0 1rem;
-    border: none;
-    outline: none;
-    box-shadow: -5px -5px 12px #ffff,
-    5px 5px 12px rgba(0,0,0,.16);
-    width: fit-content;
-    padding: 1rem;
-    border-radius: 1rem;
-    font-weight: bolder;
-} */
 
 button:active {
     box-shadow: 5px 5px 12px #ffff,
@@ -76,16 +63,6 @@ h1 {
 }
 
 #inputText {
-    /* border-radius: 1rem;
-    border: none;
-    outline: none; */
-    /* box-shadow: -5px -5px 12px #ffff,
-    5px 5px 12px rgba(0,0,0,.16);
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    box-sizing: border-box; */
     align-self: center;
     background-color: #fff;
     background-image: none;
@@ -129,8 +106,9 @@ h1 {
     margin-left: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     padding: .2rem;
+    width: 200px;
 }
 
 .button-55 {
@@ -148,7 +126,6 @@ h1 {
     color: #41403e;
     cursor: pointer;
     display: inline-block;
-    /* font-family: Neucha, sans-serif; */
     font-family: 'Patrick Hand', cursive;
     letter-spacing: .1rem;
     font-size: 1.2rem;
@@ -189,6 +166,7 @@ h1 {
 .date {
     text-align: center;
     font-size: 1.3rem;
+    width: 80%;
 }
 @media (max-width:768px) {
     main {
