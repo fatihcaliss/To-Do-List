@@ -16,10 +16,12 @@ list.addEventListener('click', (e) => {
     else if (e.target.innerText == "⚪") {
         e.target.innerText = "✔";
         e.target.nextElementSibling.style.textDecoration = "line-through";
+        e.target.nextElementSibling.style.color = "rgba(0, 0, 0, .5)";
         e.target.classList.add('symbol');
     }
     else if (e.target.innerText == "✔") {
         e.target.nextElementSibling.style.textDecoration = "none";
+        e.target.nextElementSibling.style.color = "rgba(0, 0, 0, 1)";
         e.target.innerText = "⚪";
         e.target.classList.remove('symbol');
     }
