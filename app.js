@@ -7,8 +7,8 @@ button.addEventListener('click', addToList);
 list.addEventListener('click', (e) => {
     if (e.target.innerText == "REMOVE") {
         
-        if (e.target.previousElementSibling.previousElementSibling.classList.contains("symbol")) {
-            e.target.parentElement.remove();
+        if (e.target.parentElement.previousElementSibling.previousElementSibling.classList.contains("symbol")) {
+            e.target.parentElement.parentElement.remove();
         }else{
             alert("Please click ⚪ (symbol)  before to remove")
         }
@@ -33,12 +33,14 @@ input.addEventListener("keydown", function (event) {
 
 function addToList() {
     if (input.value != "") {
+
         let date = new Date(); //this five line part for adding date
         let options = {    weekday: "short",
         year: "numeric",
         month: "2-digit",
         day: "numeric"};
         let shortDate =  date.toLocaleDateString("en", options)
+
         let element = document.createElement('div');
         element.classList.add('contentText');
         element.innerHTML = `<span class="whiteBall">&#x26AA;</span><p>${input.value}</p>
