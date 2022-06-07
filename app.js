@@ -1,6 +1,7 @@
 const input = document.getElementById('inputText');
 const button = document.querySelector('#btn');
 const list = document.querySelector('.list');
+const clear = document.querySelector('#clear');
 
 button.addEventListener('click', addToList);
 
@@ -30,6 +31,12 @@ list.addEventListener('click', (e) => {
 input.addEventListener("keydown", function (event) {
     if (event.key == "Enter") {
         addToList();
+    }
+})
+
+clear.addEventListener('click',(e) => {
+    if(confirm("Are you sure that you want to delete all items?")){
+        location.reload();
     }
 })
 
