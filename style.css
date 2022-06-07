@@ -32,14 +32,21 @@ main {
     background-color: rgba(222, 184, 135, 0.459);
 }
 
-p {
+.pText{
     max-width: 340px; 
-    overflow: hidden;
-    text-overflow: ellipsis;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
     margin-left: .5rem;
     font-size: 1.5rem;
     font-family: 'Patrick Hand', cursive;
     font-weight: lighter;
+    border-bottom: #41403e dashed 2px;
+    word-wrap: break-word;
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: 'Patrick Hand', cursive;
 }
 
 button:active {
