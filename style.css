@@ -125,8 +125,12 @@ h1 {
     margin: 2rem auto;
 }
 
-.button-55 {
+.rght {
     margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .2rem;
 }
 
 .button-55 {
@@ -175,8 +179,17 @@ h1 {
 .symbol {
     color: green;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
+.whiteBall {
+    cursor: pointer;
+}
+
+.date {
+    text-align: center;
+    font-size: 1.3rem;
+}
 @media (max-width:768px) {
     main {
         width: 500px;
