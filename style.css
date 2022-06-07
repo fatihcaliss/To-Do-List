@@ -182,5 +182,9 @@ h1 {
     #inputText {
         width: 280px;
     }
+
+    p {
+        max-width: 150px
+    }
     
 }
