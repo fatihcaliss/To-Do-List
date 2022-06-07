@@ -52,6 +52,8 @@ button:active {
     padding: 2rem;
     width: 100%;
     background-color: rgba(222, 184, 135, 0.459);
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -167,6 +169,11 @@ h1 {
     text-align: center;
     font-size: 1.3rem;
     width: 80%;
+}
+
+#clear {
+    align-items: flex-end;
+    order: 1;
 }
 @media (max-width:768px) {
     main {
