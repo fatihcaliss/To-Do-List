@@ -43,7 +43,7 @@ function addToList() {
 
         let element = document.createElement('div');
         element.classList.add('contentText');
-        element.innerHTML = `<span class="whiteBall">&#x26AA;</span><p>${input.value}</p>
+        element.innerHTML = `<span class="whiteBall">&#x26AA;</span><p class="pText">${input.value}</p>
         <div class="rght"><p class="date">${shortDate}</p> <button class="button-55"> REMOVE </button></div>`
         list.appendChild(element);
         input.value = ""
