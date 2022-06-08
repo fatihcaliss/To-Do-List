@@ -1,12 +1,14 @@
-# To-Do-List
+# To-Do-List (Version 2.0)
 
 # :point_right: [Click here to see on browser](https://fatihcaliss.github.io/To-Do-List/)<br><hr>
 
+<b> In this repo, I wrote code for making a to-do list.
+ 
+:boom: In the last update, I provided that you can use local storage and you can access your to Do list every time when you want.:boom:
 
 
-
- <b> In this repo, I wrote code for making a to-do list.  <br><br>
- :boom: I used; <br> 
+ 
+I used; <br> 
 ✔ DOM Elements <br>
 ✔ DOM HTML <br>
 ✔ DOM Date objects <br>
